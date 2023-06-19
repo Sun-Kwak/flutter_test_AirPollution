@@ -2,9 +2,11 @@ import 'package:air_pollution/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class MainCard extends StatelessWidget {
+  final Color backgroundColor;
   final Widget child;
 
   MainCard({
+    required this.backgroundColor,
     required this.child,
     super.key});
 

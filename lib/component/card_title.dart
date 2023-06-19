@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 
 class CardTitle extends StatelessWidget {
   final String title;
+  final Color backgroundColor;
   const CardTitle({
+    required this.backgroundColor,
     required this.title,
     super.key});
 
@@ -11,7 +13,7 @@ class CardTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return                 Container(
       decoration: BoxDecoration(
-        color: darkColor,
+        color: backgroundColor,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(8),
           topRight: Radius.circular(8),
